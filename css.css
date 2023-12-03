@@ -68,4 +68,6 @@ margin: 0 auto;
 justify-content: space-between;
 }
 
-
+.seller{
+    color: rgb(0, 0, 161);
+}
