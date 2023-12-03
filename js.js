@@ -28,3 +28,9 @@ $.ajax('https://my-json-server.typicode.com/Mikedonchik/new/products', {
     }
     
 })
+$(document).ready(function(){
+$(".seller").click({
+    
+})
+
+})
