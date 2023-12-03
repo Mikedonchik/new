@@ -70,4 +70,7 @@ justify-content: space-between;
 
 .seller{
     color: rgb(0, 0, 161);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
 }

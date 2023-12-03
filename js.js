@@ -9,8 +9,8 @@ $.ajax('https://my-json-server.typicode.com/Mikedonchik/new/products', {
                 <img src="${e.photo_url}" alt="" class="photo">
                 <h1 class="name">${e.name}</h1>
                 <div class="disc">
-                <p >Price:${e.price}</p>
-                <p>Description:${e.description}</p>
+                <p >Price: ${e.price}</p>
+                <p>Description: ${e.description}</p>
                 <p class ="seller">Seller profile<p>
                 </div>
                 <button class="but">
@@ -26,4 +26,5 @@ $.ajax('https://my-json-server.typicode.com/Mikedonchik/new/products', {
     error: function (xhr) {
         console.log(xhr.statusText);
     }
+    
 })
