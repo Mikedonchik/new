@@ -43,6 +43,7 @@ body{
 
 }
 .but{
+    justify-content: space-between;
 border: none;
   background: darkgreen;
 border-radius: 90px; 

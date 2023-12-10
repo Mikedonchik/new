@@ -4,14 +4,14 @@ $.ajax('https://my-json-server.typicode.com/Mikedonchik/new/products', {
     success: function (result) {
         console.log(result)
         result.forEach(e => {
-            $(".all").append (
+            $(".all").append(
                 ` <div class ="card">
                 <img src="${e.photo_url}" alt="" class="photo">
                 <h1 class="name">${e.name}</h1>
                 <div class="disc">
                 <p >Price: ${e.price}</p>
                 <p>Description: ${e.description}</p>
-                <p class ="seller">Seller profile<p>
+                <a href="user.html?id=${e.author_id}" class ="seller">Seller profile</a>
                 </div>
                 <button class="but">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-plus" viewBox="0 0 16 16">
@@ -26,11 +26,7 @@ $.ajax('https://my-json-server.typicode.com/Mikedonchik/new/products', {
     error: function (xhr) {
         console.log(xhr.statusText);
     }
-    
-})
-$(document).ready(function(){
-$(".seller").click({
-    
-})
 
 })
+
+
